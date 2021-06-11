@@ -134,7 +134,7 @@ export default {
     submit: async function() {
       const CORS_PROXY = "https://event-temp-app.vercel.app/";
       const URL =
-        "https://script.google.com/macros/s/AKfycbx5AjnM820ki_M40aq96OEYTwkgQkfIpWV9lxeMWgPOg6RL-eV3ODZRXUwzESgpv0wrKQ/exec";
+        "https://script.google.com/macros/s/AKfycbxQ6moM8I6w_I0_1NQsTuTdquWBPmLjCZsjFUAI0X_edDMVk397ENUOSkfYwEAPv4U0TA/exec";
 
       try {
         if (this.name == null || this.name == "") {
@@ -150,9 +150,7 @@ export default {
           crossDomain: true
         };
 
-        await axios.post(CORS_PROXY + URL, params, {
-          headers: { "Content-Type": "application/json" }
-        });
+        await axios.get(URL, params);
         this.refresh();
       } catch (e) {
         console.log(e);
