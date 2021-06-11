@@ -134,7 +134,7 @@ export default {
     submit: async function() {
       const CORS_PROXY = "https://event-temp-app.vercel.app/";
       const URL =
-        "https://script.google.com/macros/s/AKfycbxQ6moM8I6w_I0_1NQsTuTdquWBPmLjCZsjFUAI0X_edDMVk397ENUOSkfYwEAPv4U0TA/exec";
+        "https://script.google.com/macros/s/AKfycbzlOlX-vzjjEmuSvdKGcJoGTgFof6AfklsFshy6IPyyR1W7FS48JHpON2g5YTItg-nhew/exec";
 
       try {
         if (this.name == null || this.name == "") {
