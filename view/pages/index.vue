@@ -133,7 +133,7 @@ export default {
     },
     submit: async function() {
       var url =
-        "https://script.google.com/macros/s/AKfycbxkrq2V7GbAKomtu_ZreVaPYLmIkhFBKnGVIg2K-yLN10tAGJpRRALGDHANeq4IxpSDOg/exec";
+        "https://script.google.com/macros/s/AKfycbx5AjnM820ki_M40aq96OEYTwkgQkfIpWV9lxeMWgPOg6RL-eV3ODZRXUwzESgpv0wrKQ/exec";
 
       try {
         if (this.name == null || this.name == "") {
