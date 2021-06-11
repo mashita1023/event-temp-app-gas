@@ -150,7 +150,9 @@ export default {
           crossDomain: true
         };
 
-        await axios.get(URL, params);
+        await axios.post(URL, params, {
+          headers: { "Content-Type": "application/json" }
+        });
         this.refresh();
       } catch (e) {
         console.log(e);
